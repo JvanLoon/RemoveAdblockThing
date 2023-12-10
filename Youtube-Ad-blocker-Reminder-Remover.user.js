@@ -127,6 +127,7 @@
             const sponsor = document.querySelectorAll("div#player-ads.style-scope.ytd-watch-flexy, div#panels.style-scope.ytd-watch-flexy");
             const nonVid = document.querySelector(".ytp-ad-skip-button-modern");
             const youtubepremium = document.getElementById('masthead-ad');
+            const popupContainer = document.querySelector('ytd-popup-container');
 
 
             if (ad)
@@ -171,6 +172,9 @@
                 }
              });
             nonVid?.click();
+
+         //Remove the additional popup after closing of other popups
+         popupContainer && popupContainer.remove();
         }, 50)
     }
     // Unpause the video Works most of the time
