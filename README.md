@@ -1,4 +1,4 @@
-Fork from origional. I dont claim anything
+Fork from original. I dont claim anything
 
 # Remove the Adblock Popup from YOUTUBE
 
